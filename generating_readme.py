@@ -13,31 +13,32 @@ def generate_markdown_file():
 
     # Generating Markdown content
     markdown_content = f"""
-    # {repository_name}
+    #{repository_name}
 
     {project_description}
 
-    ## Table of Contents
+    ##Table of Contents
     - [Installation](#installation)
     - [Usage](#usage)
     - [Contributors](#contributors)
     - [Badges](#badges)
     - [GitHub Repository](#github-repository)
 
-    ## Installation
+    ##Installation
     ```
     {installation_instructions}
     ```
-    ## Usage
+    ##Usage
     ```
     {usage_instructions}
     ```
-    ## Contributors
+    ##Contributors
     {contributors}
 
-    ## Badges
-    {stars_badge} {forks_badge} {issues_badge} {license_badge}
-    ## GitHub Repository
+    ##Badges
+    {stars_badge} {forks_badge} {issues_badge}
+
+    ##GitHub Repository
     [Link to GitHub repository](https://github.com/{repository_name})
     """
     # Writing content to Markdown file

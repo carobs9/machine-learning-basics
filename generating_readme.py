@@ -11,7 +11,7 @@ def generate_markdown_file():
     contributors = input("Enter the contributors to your project (separated by commas): ")
 
     # Generating list of contents
-    contents_list = generate_contents_list()
+    contents_list = generate_contents_list('breast_cancer_prediction')
 
     # Generating Markdown content
     markdown_content = f"""# {repository_name}
@@ -43,10 +43,12 @@ def generate_markdown_file():
         markdown_file.write(markdown_content)
     print(f"Markdown file '{markdown_file_name}' generated successfully!")
 
-def generate_contents_list():
+def generate_contents_list(folder_name):
     contents_list = ""
-    for item in os.listdir("."):
-        if os.path.isdir(item) or os.path.isfile(item):
+    folder_path = os.path.join(".", folder_name)
+    for item in os.listdir(folder_path):
+        item_path = os.path.join(folder_path, item)  # Get the full path of the item within the folder
+        if os.path.isdir(item_path) or os.path.isfile(item_path):  # Check if the item is a directory or a file
             contents_list += f"- {item}\n"
     return contents_list
 

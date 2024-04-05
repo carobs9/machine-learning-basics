@@ -44,13 +44,9 @@ def generate_markdown_file():
 
 def generate_contents_list():
     contents_list = ""
-    for root, dirs, files in os.walk("."):
-        level = root.count(os.sep)
-        indent = "    " * (level - 1)
-        contents_list += f"{indent}- **{os.path.basename(root)}/**\n"
-        sub_indent = "    " * level
-        for file in files:
-            contents_list += f"{sub_indent}- {file}\n"
+    for item in os.listdir("."):
+        if os.path.isdir(item) or os.path.isfile(item):
+            contents_list += f"- {item}\n"
     return contents_list
 
 if __name__ == "__main__":

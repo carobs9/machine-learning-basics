@@ -42,7 +42,7 @@ def generate_markdown_file():
     ## Badges
     {stars_badge} {forks_badge} {issues_badge} {license_badge}
     ## GitHub Repository
-    [Link to GitHub repository](https://github.com/{machine-learning-basics})
+    [Link to GitHub repository](https://github.com/{repository_name})
     """
     # Writing content to Markdown file
     markdown_file_name = f"{repository_name}_README.md"

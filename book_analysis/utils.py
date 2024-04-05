@@ -1,3 +1,4 @@
+
 import numpy as np
 import matplotlib.pyplot as plt
 import PyPDF2
@@ -22,9 +23,6 @@ nltk.download('punkt')
 from nltk.tokenize import word_tokenize
 snowball_stemmer = SnowballStemmer('spanish')
 
-# paths
-output_file_path = "/content/drive/MyDrive/el_amante_japones/extracted_text.txt"
-pdf_file_path = "/content/drive/MyDrive/el_amante_japones/el-amante-japones-isabel-allende.pdf"
 
 # functions
 def extract_text_from_pdf(pdf_file_path):

@@ -1,0 +1,65 @@
+{
+  "best_metric": 0.08833102881908417,
+  "best_model_checkpoint": "/content/drive/MyDrive/el_amante_japones/ner_model_2/checkpoint-1041",
+  "epoch": 2.0,
+  "eval_steps": 500,
+  "global_step": 2082,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.48,
+      "grad_norm": 0.9214770197868347,
+      "learning_rate": 1.6797950688440602e-06,
+      "loss": 0.0412,
+      "step": 500
+    },
+    {
+      "epoch": 0.96,
+      "grad_norm": 0.08983149379491806,
+      "learning_rate": 1.3595901376881202e-06,
+      "loss": 0.0388,
+      "step": 1000
+    },
+    {
+      "epoch": 1.0,
+      "eval_loss": 0.08833102881908417,
+      "eval_runtime": 8.3647,
+      "eval_samples_per_second": 181.477,
+      "eval_steps_per_second": 22.714,
+      "step": 1041
+    },
+    {
+      "epoch": 1.44,
+      "grad_norm": 0.6064287424087524,
+      "learning_rate": 1.0393852065321807e-06,
+      "loss": 0.0362,
+      "step": 1500
+    },
+    {
+      "epoch": 1.92,
+      "grad_norm": 1.699942708015442,
+      "learning_rate": 7.191802753762407e-07,
+      "loss": 0.0361,
+      "step": 2000
+    },
+    {
+      "epoch": 2.0,
+      "eval_loss": 0.09074375778436661,
+      "eval_runtime": 8.3974,
+      "eval_samples_per_second": 180.77,
+      "eval_steps_per_second": 22.626,
+      "step": 2082
+    }
+  ],
+  "logging_steps": 500,
+  "max_steps": 3123,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 3,
+  "save_steps": 500,
+  "total_flos": 51444583741320.0,
+  "train_batch_size": 8,
+  "trial_name": null,
+  "trial_params": null
+}

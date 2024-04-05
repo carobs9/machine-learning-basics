@@ -4,6 +4,7 @@ import os
 def generate_markdown_file():
     # Prompting user for inputs
     repository_name = input("\n Enter the name of your GitHub repository: ")
+    link = input("\n Enter the link of the GutHub repository: ")
     project_description = input("Enter a short description of your project: ")
     installation_instructions = input("Enter installation instructions for your project: ")
     usage_instructions = input("Enter usage instructions for your project: ")
@@ -33,11 +34,11 @@ def generate_markdown_file():
 ## Contributors
 {contributors}
 ## GitHub Repository
-[Link to GitHub repository](https://github.com/carobs9/{repository_name})
+[Link to GitHub repository]({link})
 """
 
     # Writing content to Markdown file
-    markdown_file_name = f"{repository_name}_README.md"
+    markdown_file_name = "README.md"
     with open(markdown_file_name, "w") as markdown_file:
         markdown_file.write(markdown_content)
     print(f"Markdown file '{markdown_file_name}' generated successfully!")

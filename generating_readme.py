@@ -14,36 +14,30 @@ def generate_markdown_file():
     license_badge = "[![GitHub license](https://img.shields.io/github/license/{})](https://github.com/{}/blob/master/LICENSE)".format(repository_name, repository_name)
 
     # Generating Markdown content
-    markdown_content = f"""
-    # {repository_name}
+    markdown_content = f"""# {repository_name}
 
-    {project_description}
+{project_description}
 
-    ## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contributors](#contributors)
-    - [License](#license)
-    - [Badges](#badges)
-    - [GitHub Repository](#github-repository)
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributors](#contributors)
+- [License](#license)
+- [Badges](#badges)
+- [GitHub Repository](#github-repository)
 
-    ## Installation
-    ```
-    {installation_instructions}
-    ```
-    ## Usage
-    ```
-    {usage_instructions}
-    ```
-    ## Contributors
-    {contributors}
-    ## License
-    This project is licensed under the {license} License - see the [LICENSE](LICENSE) file for details.
-    ## Badges
-    {stars_badge} {forks_badge} {issues_badge} {license_badge}
-    ## GitHub Repository
-    [Link to GitHub repository](https://github.com/{repository_name})
-    """
+## Installation
+## Usage
+## Contributors
+{contributors}
+## License
+This project is licensed under the {license} License - see the [LICENSE](LICENSE) file for details.
+## Badges
+{stars_badge} {forks_badge} {issues_badge} {license_badge}
+## GitHub Repository
+[Link to GitHub repository](https://github.com/{repository_name})
+"""
+
     # Writing content to Markdown file
     markdown_file_name = f"{repository_name}_README.md"
     with open(markdown_file_name, "w") as markdown_file:

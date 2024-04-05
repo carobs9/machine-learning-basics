@@ -4,14 +4,15 @@ import os
 def generate_markdown_file():
     # Prompting user for inputs
     repository_name = input("\n Enter the name of your GitHub repository: ")
-    link = input("\n Enter the link of the GutHub repository: ")
+    subrepository = input("\n Enter the name of your GitHub subrepository: ")
+    link = input("\n Enter the link of the GitHub repository: ")
     project_description = input("Enter a short description of your project: ")
     installation_instructions = input("Enter installation instructions for your project: ")
     usage_instructions = input("Enter usage instructions for your project: ")
     contributors = input("Enter the contributors to your project (separated by commas): ")
 
     # Generating list of contents
-    contents_list = generate_contents_list('breast_cancer_prediction')
+    contents_list = generate_contents_list(subrepository)
 
     # Generating Markdown content
     markdown_content = f"""# {repository_name}
@@ -43,9 +44,9 @@ def generate_markdown_file():
         markdown_file.write(markdown_content)
     print(f"Markdown file '{markdown_file_name}' generated successfully!")
 
-def generate_contents_list(folder_name):
+def generate_contents_list(subrepository):
     contents_list = ""
-    folder_path = os.path.join(".", folder_name)
+    folder_path = os.path.join(".", subrepository)
     for item in os.listdir(folder_path):
         item_path = os.path.join(folder_path, item)  # Get the full path of the item within the folder
         if os.path.isdir(item_path) or os.path.isfile(item_path):  # Check if the item is a directory or a file

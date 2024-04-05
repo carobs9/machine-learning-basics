@@ -1,6 +1,6 @@
 # Generative Models
 
-Generating data using machine learning models
+Generating new data using machine learning models and probabilistic models.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -12,9 +12,8 @@ Generating data using machine learning models
 ## Installation
 None
 ## Contents
-- gmms_clustering_generation.ipynb
-- utils.py
-- __pycache__
+- gmms_clustering_generation.ipynb - generating data using Gaussian Mixture Models
+- utils.py - utilities
 
 ## Usage
 None

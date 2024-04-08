@@ -16,6 +16,8 @@ None
 ## Contents
 - el_amante_jap_analysis.ipynb: notebook containing the analysis so far
 - utils.py: utilities
+- el-amante-japones-isabel-allende.pdf: book in pdf format
+- extracted_text.txt: text from the pdf
 
 ## Usage
 None

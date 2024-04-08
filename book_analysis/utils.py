@@ -76,7 +76,7 @@ def word_count(text):
   plt.scatter(word_used[0:50], occurrence[0:50])
   plt.xticks(rotation = 90)
   plt.title('Top 50 Used Words and Occurence')
-  plt.show()
+  plt.savefig('figs/word_count_plot.png') 
 
 
 def word_count_clean(text):
@@ -105,11 +105,11 @@ def word_count_clean(text):
   # Using zip function and Unpacking the values
   word_used, occurrence = zip(*sorted_d)
 
-# printing the scatter values
-#print(word_used)
-#print(occurrence)
-
   plt.scatter(word_used[0:50], occurrence[0:50])
   plt.xticks(rotation = 90)
   plt.title('Top 50 Used Words and Occurence (No Stopwords)')
-  plt.show()
+  plt.savefig('figs/word_count_plot.png') 
+
+def save_plot(plot):
+    plt.title('Dispersion Plot of Selected Words')
+    plt.savefig('figs/dispersion_plot.png')

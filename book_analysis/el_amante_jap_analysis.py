@@ -1,10 +1,10 @@
 from utils import extract_text_from_pdf, save_text_to_file, word_count_clean, word_count, save_plot
 from utils import unicodedata, nltk, snowball_stemmer, re
 
-pdf_file_path = "el-amante-japones-isabel-allende.pdf"
+pdf_file_path = "files/el-amante-japones-isabel-allende.pdf"
 extracted_text = extract_text_from_pdf(pdf_file_path)
 
-output_file_path = "extracted_text.txt" 
+output_file_path = "filesextracted_text.txt" 
 save_text_to_file(extracted_text, output_file_path)
 
 text_lower = extracted_text.lower()

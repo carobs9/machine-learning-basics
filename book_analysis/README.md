@@ -15,9 +15,13 @@
 None
 ## Contents
 - el_amante_jap_analysis.ipynb: notebook containing the analysis so far
+- ner.ipynb: notebook for fine-tuning a ner model
 - utils.py: utilities
-- el-amante-japones-isabel-allende.pdf: book in pdf format
-- extracted_text.txt: text from the pdf
+- utils_ner.py: utilities for building ner
+- files:
+    - el-amante-japones-isabel-allende.pdf: book in pdf format
+    - extracted_text.txt: text from the pdf
+- ner_model_2: fine-tuned ner model
 
 ## Usage
 None

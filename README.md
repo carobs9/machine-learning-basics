@@ -17,7 +17,8 @@ None
 - breast_cancer_prediction
 - generating_readme.py
 - generative_models
-- machine-learning-basics_README.md
+- README.md
+- generating_readme.py: a python file to generate readme files automatically 
 
 ## Usage
 None

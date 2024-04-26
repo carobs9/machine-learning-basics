@@ -18,6 +18,7 @@ None
 - generating_readme.py
 - generative_models
 - README.md
+- data_augmentatoin.ipynb
 - generating_readme.py: a python file to generate readme files automatically 
 
 ## Usage
